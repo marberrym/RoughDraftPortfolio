@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(179, 179, 214);
+}
+
+.mainhead {
+    background-color: rgb(179, 179, 214);
+    padding: 20px;
+    font-family: Lobster;
+    font-size: 82px;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    height: 100px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-align: center;
+}
+
+.blackback {
+    background-color: black;
+}
