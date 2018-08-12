@@ -25,3 +25,33 @@ body {
 .blackback {
     background-color: black;
 }
+
+.navBar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    width: 100%;
+    height: 3em;
+    align-items: center;
+}
+
+.navIcon {
+    color: rgba(0, 0, 0, 0.61);
+    font-family: Do Hyeon;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+.mainPageFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPic {
+    margin-top: 5em;
+    height: 25em;
+    border-radius: 50%;
+}
