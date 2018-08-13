@@ -46,6 +46,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .mainPageFlex {
@@ -88,18 +89,36 @@ body {
 .menuBoxContent {
     display: flex;
     position: fixed;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
-    top: 2.5em;
+    top: 3.2em;
     left: 0;
     background: whitesmoke;
     border: 1px solid black;
     border-radius: 10px;
-    width: 20em;
-    height: 30em;
-    visibility: show;
+    width: 10em;
+    max-height: 0em;
+    visibility: hidden;
+    transform: scale(.01);
+    opacity: 0;
+    overflow-y: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(5, 2, 1.5, 3);
+    transform-origin: 2.5em;
 }
 
 .menuVisible{
-    visibility: show;
+    opacity:1;
+    max-height: 20em;
+    visibility: visible;
+    transform: scale(1.0);
+}
+    /* transition: visibility 0s linear .2s, opacity 0.25s 0s, transform 1s;
+} */
+
+.menuItem {
+    padding: 1em;
+    border: 1px solid black;
 }
