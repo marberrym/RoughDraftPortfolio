@@ -1,28 +1,34 @@
+import anime from 'animejs';
+
 var menuButton = document.querySelector('#menuIcon');
 var menuBox = document.querySelector('#menuBox');
 var mainPic = document.querySelector('.mainPic');
 var mainFlex = document.querySelector('.mainPageFlex');
 var navBar = document.querySelector('.navBar');
+var lhLogo = document.querySelectorAll('.lhLogo');
 
-var menuUp = "off";
 var showMenu = function(event) {
-    if(menuUp === "off") {
-        menuBox.classList.add('menuVisible');
-        menuUp = "on";
+    if(event.target === menuButton) {
+        menuBox.classList.add('menuVisible');    
     }
 }
 
 var hideMenu = function(event) {
-    if(menuUp === "on") {
-        if(event.target === mainFlex) {
+        if(event.target === mainFlex ) {
             menuBox.classList.remove('menuVisible');
             menuUp = "off";
-        }
-    }
-    
+        }  
+}
+
+var lhanimation = function(event) {
+    lhLogo.forEach(function(icon) {
+        icon.classList.add('lhLogoAnimate');
+    });
 }
 
 menuButton.addEventListener('click', showMenu);
 window.addEventListener('click', hideMenu);
+
+mainPic.addEventListener('click', lhanimation);
 
 

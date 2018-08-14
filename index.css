@@ -86,6 +86,13 @@ body {
     margin-top: 1em;
 }
 
+.modalFullScreen {
+    visibility: visible;
+    position: fixed;
+    width: 100%;
+    height: 100%
+}
+
 .menuBoxContent {
     display: flex;
     position: fixed;
@@ -98,7 +105,7 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     width: 10em;
-    max-height: 0em;
+    max-height: 20em;
     visibility: hidden;
     transform: scale(.01);
     opacity: 0;
@@ -110,8 +117,7 @@ body {
 }
 
 .menuVisible{
-    opacity:1;
-    max-height: 20em;
+    opacity:.8;
     visibility: visible;
     transform: scale(1.0);
 }
@@ -122,3 +128,39 @@ body {
     padding: 1em;
     border: 1px solid black;
 }
+
+.innerIconFlex {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.lhLogo {
+    position: absolute;
+    left:0;
+    right:0;
+    /* height: 2.4em; */
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(5, 2, 1.5, 3);
+    transform-origin: 1;
+    transform: scale(.1) rotate(180deg) scaleX(.5);
+    animation: skew 2s infinite;
+    animation-direction: alternate;
+}
+
+.lhLogoAnimate {
+    position: relative;
+    transform: rotate(360deg) scaleX(1) scale(1);
+}
+
+@keyframes skew {
+    0% {
+      transform: skewX(20deg) scaleX(2) scaleY(1);
+    }
+    100% {
+      transform: skewX(-20deg) scaleX(1) scaleY(2);
+    }
+  }

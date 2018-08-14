@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body> 
+    
     <div id="menuBox" class="menuBoxContent">
         <div class="menuItem">Projects</div>
         <div class="menuItem">Resume</div>
@@ -20,7 +21,7 @@
     
     <div class="mainPageFlex">
         <div class="navBar">
-            <i id="menuIcon" class="fas fa-chevron-circle-right fa-2x navIcon";></i>
+            <i id="menuIcon" class="fas fa-bars fa-2x navIcon";></i>
             <span class="navIcon">About</span>
             <span class="navIcon" style="flex: 1;"></span>
             <span class="navIcon">Contact</span>
@@ -30,10 +31,13 @@
             <div class="introText">Hello, my name is Matthew! <hr>How do you do?</div>
             <div class="subText">Thank you for visiting my Portfolio Site, I have a lot of treats for you!</div>
             <div class="iconFlex">
-                <i class="fab fa-linkedin fa-3x"></i>
-                <i class="fab fa-github fa-3x"></i>
-                <i class="fab fa-instagram fa-3x"></i>
-                <img src="images/LHMSQLogo.png" style="height: 2.4em;">
+                <div class="innerIconFlex">
+                    <i class="fab fa-linkedin fa-3x lhLogo"></i>
+                    <i class="fab fa-github fa-3x lhLogo"></i>
+                    <i class="fab fa-instagram fa-3x lhLogo"></i>
+                    <img src="images/LHMSQLogo.png" class="lhLogo" style="height: 2.4em;">
+                </div>
+                
             </div>
         </div>
         <div class="mainContent">
@@ -52,8 +56,7 @@
         </div>
         
     </div>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="semantic/dist/semantic.js"></script>
+    <script src="node_modules/animejs/anime.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
