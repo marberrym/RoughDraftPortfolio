@@ -4,21 +4,22 @@ var animation = document.querySelector(".animation")
 
 
 
-var vertLine = function(width, delay) {
-    var vline = document.createElement('div');
-    vline.classList.add('verticalLine');
-    vline.setAttribute('left', width);
-    vline.setAttribute('animation', 'alter' + delay + 'ms infinite');
+// var vertLine = function(width, delay) {
+//     var vline = document.createElement('div');
+//     vline.classList.add('verticalLine');
+//     vline.setAttribute('left', width);
+//     vline.setAttribute('animation', 'alter ' + delay + 'ms infinite');
     
-    console.log(vline);
-    animation.appendChild(vline);
+//     console.log(vline);
+//     animation.appendChild(vline);
     
-}
+// }
 
-for (i=0; i<20; i++) {
-    var delay = 1000;
-    vertLine(i + 'em', delay);
-    console.log(i + 'em');
-    console.log(delay);
-    delay += 1000;
-}
+// for (i=0; i<20; i++) {
+//     var delay = 1000;
+//     vertLine(i + 'em', delay);
+//     console.log(i + 'em');
+//     console.log(delay);
+//     delay += 1000;
+// }
+

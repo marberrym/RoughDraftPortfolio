@@ -20,12 +20,6 @@ var hideMenu = function(event) {
         }  
 }
 
-var lhanimation = function(event) {
-    lhLogo.forEach(function(icon) {
-        icon.classList.add('lhLogoAnimate');
-    });
-}
-
 menuButton.addEventListener('click', showMenu);
 window.addEventListener('click', hideMenu);
 

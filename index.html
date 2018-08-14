@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="animations.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/cc" media="screen" href="contactModal.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body> 
+    <div class="modalOutter">
+
+    </div>
     
     <div id="menuBox" class="menuBoxContent">
         <div class="menuItem">Projects</div>
@@ -24,13 +28,14 @@
             <i id="menuIcon" class="fas fa-bars fa-2x navIcon";></i>
             <span class="navIcon">About</span>
             <span class="navIcon" style="flex: 1;"></span>
-            <span class="navIcon">Contact</span>
+            <span class="navIcon" id="contact">Contact</span>
         </div>
-        <div class="animation">
-        </div>
+        <!-- <div class="animation">
+        </div> -->
         <div class="introduction">
             <img src="images/circlepic.png" class="mainPic">
-            <div class="introText">Hello, my name is Matthew! <hr>How do you do?</div>
+            <div class="introText">Hello, my name is Matthew! </div>
+            <div class="introText">How do you do?</div>
             <div class="subText">Thank you for visiting my Portfolio Site, I have a lot of treats for you!</div>
             <div class="iconFlex">
                 <div class="innerIconFlex">
@@ -43,23 +48,20 @@
             </div>
         </div>
         <div class="mainContent">
-            <p>1</p>
-            <p>2</p>
-            <p>2</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>7</p>
-            <p>7</p>
-            <p>7</p>
-            <p>7</p>
-            <p>7</p>
+            <h1>Projects:</h1>
+        </div>
+        <div class="mainContent" style="background-color: red;">
+            <h1>Skills:</h1>
+        </div>
+        <div class="mainContent" style="background-color: greenyellow;">
+            <h1>About:</h1>
         </div>
         
     </div>
-    <script src="animations.js"></script>
+    
     <script src="node_modules/animejs/anime.min.js"></script>
+    <script src="animations.js"></script>
+    <script src="contactModal.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
