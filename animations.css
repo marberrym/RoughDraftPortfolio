@@ -1,0 +1,75 @@
+.lhLogo {
+    position: relative;
+    left:0;
+    right:0;
+    /* height: 2.4em; */
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(5, 2, 1.5, 3);
+    transform-origin: 1;
+    transform: scale(.1) rotate(180deg) scaleX(.5);
+    animation: skew 2s infinite;
+    animation-direction: alternate;
+}
+
+.lhLogoAnimate {
+    position: relative;
+    transform: rotate(360deg) scaleX(1) scale(1);
+}
+
+@keyframes skew {
+    0% {
+      transform: skewX(20deg) scaleX(2) scaleY(1) rotate(0deg);
+    }
+    100% {
+      transform: skewX(-20deg) scaleX(1) scaleY(2) rotate(1080deg);
+    }
+  }
+
+  .animation {
+      display: flex;
+      justify-content: space-between;
+      margin: 6em;
+      height: 20em;
+      width: 50em;
+      background-color: rgba(0, 0, 139, 0.541);
+  }
+
+  .verticalLine {
+      height: 90%;
+      border-left: 5px solid black;
+      position: relative;
+      top: 0em;
+      left: 0em;
+      padding: 1em;
+      transform-origin: 0;
+      /* transform: rotate(180deg); */
+      animation: alter 1s infinite;
+      animation-direction: alternate;
+  }
+
+  .diagonalLine {
+      width: 6em;
+      height: 50%;
+      top: 0;
+      position: relative;
+      border-top: 2px solid black;
+      left: 7em;
+      transform-origin: 0;
+      /* animation: alter 1ms infinite; */
+      animation-direction: alternate;
+      transform: rotate(72deg);
+  }
+
+  @keyframes alter {
+      0% {
+          transform: translateX(2em);
+          height: 10%;
+          border-left: 5px solid black;
+      }
+      100% {
+          transform: translateX(4em);
+          height: 90%;
+          border-left: 8px solid crimson;
+      }
+  }

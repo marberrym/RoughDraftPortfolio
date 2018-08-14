@@ -137,30 +137,3 @@ body {
     align-content: center;
 }
 
-.lhLogo {
-    position: absolute;
-    left:0;
-    right:0;
-    /* height: 2.4em; */
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(5, 2, 1.5, 3);
-    transform-origin: 1;
-    transform: scale(.1) rotate(180deg) scaleX(.5);
-    animation: skew 2s infinite;
-    animation-direction: alternate;
-}
-
-.lhLogoAnimate {
-    position: relative;
-    transform: rotate(360deg) scaleX(1) scale(1);
-}
-
-@keyframes skew {
-    0% {
-      transform: skewX(20deg) scaleX(2) scaleY(1);
-    }
-    100% {
-      transform: skewX(-20deg) scaleX(1) scaleY(2);
-    }
-  }
